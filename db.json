@@ -1,0 +1,130 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Video Number One",
+      "img": {
+        "src": "/images/video-thumbs/thumb-01.jpg"
+      },
+      "producer": {
+        "name": "John Smith"
+      },
+      "date": {
+        "f": "19/4/2022"
+      },
+      "videoCount": 5
+    },
+    {
+      "id": 2,
+      "title": "Video Name Goes Here with a maximum length of two lines allowed example of a long title lorem ipsum",
+      "img": {
+        "src": "/images/video-thumbs/thumb-01.jpg"
+      },
+      "producer": {
+        "name": "John Smith"
+      },
+      "date": {
+        "f": "19/4/2022"
+      },
+      "videoCount": 5
+    },
+    {
+      "id": 3,
+      "title": "Video Number Three",
+      "img": {
+        "src": "/images/video-thumbs/thumb-01.jpg"
+      },
+      "producer": {
+        "name": "John Smith"
+      },
+      "date": {
+        "f": "19/4/2022"
+      },
+      "videoCount": 5
+    }
+  ],
+  "tasks": [
+    {
+      "approved": false,
+      "name": "Location sheet name",
+      "created": "20 July, 2021",
+      "dueDate": "20 August, 2021",
+      "status": "draft",
+      "id": 1
+    },
+    {
+      "approved": false,
+      "name": "Location sheet name",
+      "created": "20 July, 2021",
+      "dueDate": "20 August, 2021",
+      "status": "active",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Location sheet name",
+      "created": "20 July, 2021",
+      "dueDate": "20 August, 2021",
+      "status": "active",
+      "approved": false
+    },
+    {
+      "id": 4,
+      "name": "Location sheet name",
+      "created": "20 July, 2021",
+      "dueDate": "20 August, 2021",
+      "status": "preprod",
+      "approved": false
+    },
+    {
+      "id": 5,
+      "name": "Location sheet name",
+      "created": "20 July, 2021",
+      "dueDate": "20 August, 2021",
+      "status": "filming",
+      "approved": false
+    },
+    {
+      "id": 6,
+      "name": "Location sheet name",
+      "created": "20 July, 2021",
+      "dueDate": "20 August, 2021",
+      "status": "postprod",
+      "approved": false
+    },
+    {
+      "id": 7,
+      "name": "Location sheet name",
+      "created": "20 July, 2021",
+      "dueDate": "20 August, 2021",
+      "status": "delivered",
+      "approved": false
+    }
+  ],
+  "statuses": [
+    {
+      "slug": "draft",
+      "title": "Draft"
+    },
+    {
+      "slug": "active",
+      "title": "Active"
+    },
+    {
+      "slug": "preprod",
+      "title": "Pre-production"
+    },
+    {
+      "slug": "filming",
+      "title": "Filming"
+    },
+    {
+      "slug": "postprod",
+      "title": "Post-production"
+    },
+    {
+      "slug": "delivered",
+      "title": "Delivered"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+@use 'sass:math';
+
+
+@mixin font-size($px, $pxMin: null) {
+    @if ($pxMin == null) {
+        font-size: #{math.div($px, 16)}rem;
+    } @else {
+        font-size: #{(math.div($px, 11))}vw;
+        font-size: clamp(#{$pxMin}px, #{(math.div($px, 12))}vw, #{$px}px);
+    }
+}
+
+@mixin line-clamp($lines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: $lines;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+}
+
+@mixin inset($gutter: 0) {
+    position: absolute;
+    top: $gutter;
+    left: $gutter;
+    right: $gutter;
+    bottom: $gutter;
+}

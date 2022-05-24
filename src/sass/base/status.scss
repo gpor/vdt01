@@ -1,0 +1,45 @@
+
+@mixin bg-and-text-color($r, $g, $b) {
+    color: rgba($r, $g, $b, 1);
+    background-color: rgba($r, $g, $b, 0.2);
+}
+
+@mixin color-by-status($status) {
+    @include bg-and-text-color(
+        var(--status-#{$status}-r, 160),
+        var(--status-#{$status}-g, 160),
+        var(--status-#{$status}-b, 160)
+    )
+}
+
+.vd-t-status {
+    display: inline-block;
+    padding: 0.6em 1.2em 0.7em;
+    line-height: 1;
+    border-radius: 99px;
+}
+
+[class*='vd-t-status__'] {
+    @include bg-and-text-color(160, 160, 160);
+}
+.vd-t-status__draft {
+    @include color-by-status(draft);
+}
+.vd-t-status__preprod {
+    @include color-by-status(preprod);
+}
+.vd-t-status__active {
+    @include color-by-status(active);
+}
+.vd-t-status__filming {
+    @include color-by-status(filming);
+}
+.vd-t-status__postprod {
+    @include color-by-status(postprod);
+}
+.vd-t-status__delivered {
+    @include color-by-status(delivered);
+}
+
+
+

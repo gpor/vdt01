@@ -1,0 +1,69 @@
+@use '../base/variables' as *;
+@use '../base/typography' as *;
+@use '../base/mixins' as *;
+
+
+table.vd-l-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    thead,
+    tbody {
+        tr {
+            th,
+            td {
+                text-align: left;
+                border-bottom: $stroke;
+                padding-left: 20px;
+                &:last-child {
+                    width: 18%;
+                }
+            }
+        }
+    }
+    thead {
+        tr {
+            th {
+                @include font-family;
+                @include font-size-body;
+                color: var(--text-faint, #999);
+                padding-bottom: 12px;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                height: 60px;
+            }
+        }
+    }
+    @include break-table-sml {
+        display: block;
+        thead {
+            display: none;
+        }
+        tbody {
+            display: flex;
+            flex-direction: column;
+            gap: 9vw;
+            tr {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 3vw;
+                border-top: $stroke;
+                padding-top: 9vw;
+                td {
+                    display: inline-block;
+                    padding: 0;
+                    height: auto;
+                    border: none;
+                    &:first-child {
+                        grid-column: span 2;
+                    }
+                }
+            }
+        }
+    }
+}
+

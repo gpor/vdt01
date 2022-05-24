@@ -1,0 +1,31 @@
+@use '../base/variables' as *;
+
+
+.vd-c-pageheader {
+    padding: 30px 0;
+    border-bottom: $stroke;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-1, #fff);
+    z-index: 100;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav {
+            a {
+                text-decoration: none;
+            }
+        }
+        button {
+            opacity: 0;
+            background-color: var(--text-faint, #999) !important;
+            outline: none;
+            transition-delay: 2s;
+            transition: opacity 1s linear;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

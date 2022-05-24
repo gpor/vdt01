@@ -5,7 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css-vendor/normalize.css">
+    
+    <title>Test candidate: Lee Stevens</title>
+    
+    <style>
+      :root {
+        --bg-1: #fff;
+        --text-1: #000;
+        --text-2: #33C4F2;
+        --text-faint: #999;
+        
+        --button-primary-bg: #33C4F2;
+        --button-primary-bg-hover: #03aee1;
+        --button-primary-text: #fff;
+        
+        --status-draft-r: 102;
+        --status-draft-g: 102;
+        --status-draft-b: 102;
+        --status-preprod-r: 255;
+        --status-preprod-g: 128;
+        --status-preprod-b: 12;
+        --status-active-r: 51;
+        --status-active-g: 196;
+        --status-active-b: 242;
+        --status-filming-r: 147;
+        --status-filming-g: 51;
+        --status-filming-b: 242;
+        --status-postprod-r: 38;
+        --status-postprod-g: 122;
+        --status-postprod-b: 219;
+        --status-delivered-r: 51;
+        --status-delivered-g: 196;
+        --status-delivered-b: 242;
+        
+        --stroke-color: #ddd;
+        --modal-overlay: rgba(0,0,0,0.2);
+      }
+      .dark-theme {
+        --bg-1: #111;
+        --text-1: #ccc;
+        --text-faint: #777;
+        --stroke-color: #333;
+        
+        --button-primary-bg: #22a1c7;
+        --button-primary-bg-hover: #33C4F2;
+        
+        --modal-overlay: rgba(255,255,255,0.1);
+      }
+    </style>
+
   </head>
   <body>
     <noscript>

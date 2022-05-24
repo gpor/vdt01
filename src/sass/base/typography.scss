@@ -1,0 +1,73 @@
+@use './agnostic' as agnostic;
+
+@mixin font-family {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    strong {
+        font-weight: 700;
+    }
+}
+
+@mixin text-color-1 {
+    color: var(--text-1);
+}
+
+@mixin text-color-2 {
+    color: var(--text-2);
+}
+
+@mixin text-margins {
+    margin: 0.8em 0;
+    &:first-child {
+        margin-top: -0.02em;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin font-size-body {
+    @include agnostic.font-size(16, 13);
+}
+@mixin font-size-body-sml {
+    @include agnostic.font-size(14, 12);
+}
+
+body {
+    @include font-family;
+    @include font-size-body;
+    line-height: 1.19;
+}
+
+h2 {
+    @include font-family;
+    @include text-color-2;
+    @include text-margins;
+    @include agnostic.font-size(20, 16)
+}
+h3 {
+    @include font-family;
+    @include text-color-1;
+    @include text-margins;
+    @include agnostic.font-size(16, 13)
+}
+
+p {
+    @include font-family;
+    @include text-color-1;
+    @include text-margins;
+    @include font-size-body;
+}
+
+a {
+    &,
+    &:link,
+    &:visited {
+        color: var(--text-1);
+        transition: all 0.2s linear;
+    }
+    &:hover,
+    &:active {
+        color: var(--text-2);
+    }
+}

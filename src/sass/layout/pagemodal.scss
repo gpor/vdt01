@@ -1,0 +1,30 @@
+@use '../base/agnostic' as agnostic;
+
+.vd-l-pagemodal {
+    @include agnostic.inset;
+    position: fixed;
+    background-color: var(--modal-overlay, rgba(0,0,0,0.2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+.vd-l-pagemodal__window {
+    background-color: var(--bg-1, #fff);
+    display: inline-block;
+    width: 84%;
+    max-width: 900px;
+    border-radius: 6px;
+    padding: 50px 60px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease-out;
+}
+
+.fade-enter-from,
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}

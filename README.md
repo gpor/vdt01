@@ -1,24 +1,19 @@
-# vd-test-01
+# Visual Domain Text Candidate: Lee Stevens
+
+[Lee Stevens Portfolio](https://leestevens.dev)
 
 ## Project setup
 ```
 npm install
 ```
 
+### starts the api server
+
+(hopefully don't need to `json-server --watch db.json`)
+json-server --watch db.json
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
