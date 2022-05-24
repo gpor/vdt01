@@ -45,7 +45,7 @@
   ],
   "tasks": [
     {
-      "approved": false,
+      "approved": true,
       "name": "Location sheet name",
       "created": "20 July, 2021",
       "dueDate": "20 August, 2021",
