@@ -7,10 +7,18 @@
 npm install
 ```
 
-### starts the api server
+### Install json-server
 
-(hopefully don't need to `json-server --watch db.json`)
+```
+npm install -g json-server
+```
+
+### Start json-server
+
+```
 json-server --watch db.json
+```
+
 
 ### Compiles and hot-reloads for development
 ```
